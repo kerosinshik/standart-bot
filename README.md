@@ -14,11 +14,10 @@ AI-powered чат-бот для поиска и ответов по PDF доку
 git clone <your-repo-url> standart_bot
 cd standart_bot
 python3.12 -m venv venv
-source venv/bin/activate   # Linux/Mac
+source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env       # и добавить API ключи Z.ai / Claude
+cp .env.example .env   # add your Z.ai / Claude API keys
 mkdir -p documents
-# скопировать PDF в documents/
 python init_db.py
 python main.py
 ```
@@ -39,3 +38,27 @@ static/          — веб-интерфейс
 Лицензия: MIT License
 
 Проект архивный, MVP для работы с нормативными документами. Цель публикации — демонстрация работы RAG и семантического поиска.
+
+---
+
+# RAG Chatbot for PDF documents
+
+AI-powered chatbot for searching and answering questions from PDF documents. MVP project developed on request.
+Supports semantic search with RAG, multiple AI models, local ChromaDB storage, and a simple web interface.
+
+**Quick start:**
+```bash
+git clone <your-repo-url> standart_bot
+cd standart_bot
+python3.12 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env   # add your Z.ai / Claude API keys
+mkdir -p documents
+python init_db.py
+python main.py
+```
+Open web interface: http://localhost:8000
+
+
+
